@@ -1,0 +1,9 @@
+{
+	"title": "Dogs finder",
+	"select": {
+		"placeholder": "Select breed"
+	},
+	"photo": {
+		"title": "Photo gallery"
+	}
+}
