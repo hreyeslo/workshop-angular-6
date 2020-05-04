@@ -9,6 +9,9 @@
         ></dogs-select>
     </nb-layout-header>
     <nb-layout-column>
-        <router-outlet></router-outlet>
+      <p>
+        Nombre: {{userdata$ | async}}
+      </p>
+      <!--<router-outlet></router-outlet>-->
     </nb-layout-column>
 </nb-layout>

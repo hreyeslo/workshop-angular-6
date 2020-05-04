@@ -12,7 +12,8 @@ import { coreReducer } from '../store/core.reducer';
 import { ConfigManager } from '../config/config';
 
 // Example store
-import {exampleReducer} from '../../example/example.reducer';
+import { exampleReducer } from '../../example/example.reducer';
+import { ExampleEffects } from '../../example/example.effects';
 
 @NgModule({
   imports: [
@@ -20,7 +21,7 @@ import {exampleReducer} from '../../example/example.reducer';
     RequestIdleModule.forRoot(),
     NbThemeModule.forRoot({name: 'default'}),
     NbLayoutModule,
-    EffectsModule.forRoot([]),
+    EffectsModule.forRoot([ExampleEffects]),
     StoreModule.forRoot({
       Core: coreReducer,
       Example: exampleReducer
