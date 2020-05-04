@@ -11,6 +11,9 @@ import { environment } from '../../../environments/environment';
 import { coreReducer } from '../store/core.reducer';
 import { ConfigManager } from '../config/config';
 
+// Example store
+import {exampleReducer} from '../../example/example.reducer';
+
 @NgModule({
   imports: [
     HttpClientModule,
@@ -19,7 +22,8 @@ import { ConfigManager } from '../config/config';
     NbLayoutModule,
     EffectsModule.forRoot([]),
     StoreModule.forRoot({
-      Core: coreReducer
+      Core: coreReducer,
+      Example: exampleReducer
     }, {
       runtimeChecks: {
         strictStateImmutability: true,

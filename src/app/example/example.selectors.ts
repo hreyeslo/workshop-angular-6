@@ -1,0 +1,1 @@
+// Crear el selector GET_NAME para poder recuperar la clave first_name
